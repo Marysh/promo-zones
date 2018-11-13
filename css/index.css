@@ -1,1 +1,72 @@
-.promo-zones pr .top{margin:20px 0 20px 0}.promo-zones pr .big-zone{background-image:url("../img/bg-big.svg");height:360px}.promo-zones pr .zone{height:170px;background-color:grey}.promo-zones pr .zone:first-child{margin-bottom:20px}
+/* line 1, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo {
+  margin-top: 50px;
+}
+
+@media (max-width: 960px) {
+  /* line 7, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+  .pzo [class*="col-"] {
+    padding: 0 0 0 0;
+  }
+  /* line 10, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+  .pzo_item {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* line 16, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item {
+  display: flex;
+  color: #ffffff;
+  height: 170px;
+  margin-bottom: 30px;
+}
+
+/* line 22, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item-left {
+  padding: 30px 0 30px 20px;
+}
+
+/* line 28, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item_title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 33, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item_text {
+  font-size: 14px;
+}
+
+/* line 39, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item .btn {
+  margin-top: 30px;
+}
+
+/* line 42, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item_image {
+  max-height: 170px;
+}
+
+/* line 44, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item_image img {
+  max-height: 100%;
+}
+
+/* line 57, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item.-size-lg {
+  height: 360px;
+}
+
+/* line 59, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item.-size-lg .pzo_item-left {
+  padding: 70px 0 70px 40px;
+}
+
+/* line 65, E:/Mary/projects/index-zones/scss/_promo-zones.scss */
+.pzo_item.-size-lg .pzo_item_image img {
+  max-height: 360px;
+}
+
+/*# sourceMappingURL=../css/index.map */

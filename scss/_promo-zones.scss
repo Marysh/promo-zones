@@ -1,16 +1,74 @@
-.promo-zones pr {
-  .top {
-    margin: 20px 0 20px 0;
-  }
-  .big-zone {
-    background-image: url("../img/bg-big.svg");
-    height: 360px;
-  }
-  .zone {
-    height: 170px;
-    background-color: grey;
-    &:first-child {
-      margin-bottom: 20px;
+.pzo { // promo-zones
+  $font-color: #ffffff;
+
+  margin-top: 50px;
+
+  @media (max-width:960px) {
+    [class*="col-"] {
+      padding: 0 0 0 0;
+    }
+    &_item {
+      margin-bottom: 0!important;
     }
   }
+
+
+  &_item {
+    display: flex;
+    color: $font-color;
+    height: 170px;
+    margin-bottom: 30px;
+
+    &-left {
+      padding: 30px 0 30px 20px;
+    }
+    &-right {
+
+    }
+    &_title {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &_text {
+      font-size: 14px;
+      //&:not(:last-child) {
+      //  margin-bottom: 20px;
+      //}
+    }
+   .btn {
+     margin-top: 30px;
+   }
+    &_image {
+      max-height: 170px;
+      img {
+        max-height: 100%;
+      }
+    }
+
+
+    &.-size {
+      &-sm {
+
+      }
+      &-md {
+
+      }
+      &-lg {
+        height: 360px;
+        .pzo_item-left {
+          padding: 70px 0 70px 40px;
+        }
+        .pzo_item_text {
+        }
+        .pzo_item_image {
+          img {
+            max-height: 360px;
+          }
+        }
+      }
+    }
+
+  }
 }
+

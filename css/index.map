@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "../scss/index.css",
+	"sources": [
+		"../scss/index.scss",
+		"../scss/_variables.scss",
+		"../scss/_base.scss",
+		"../scss/_promo-zones.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\r\n\r\n@import \"base\";\r\n@import \"promo-zones\";",
+		"$white: #ffffff;",
+		"",
+		".pzo { // promo-zones\r\n  $font-color: #ffffff;\r\n\r\n  margin-top: 50px;\r\n\r\n  @media (max-width:960px) {\r\n    [class*=\"col-\"] {\r\n      padding: 0 0 0 0;\r\n    }\r\n    &_item {\r\n      margin-bottom: 0!important;\r\n    }\r\n  }\r\n\r\n\r\n  &_item {\r\n    display: flex;\r\n    color: $font-color;\r\n    height: 170px;\r\n    margin-bottom: 30px;\r\n\r\n    &-left {\r\n      padding: 30px 0 30px 20px;\r\n    }\r\n    &-right {\r\n\r\n    }\r\n    &_title {\r\n      margin-bottom: 20px;\r\n      font-weight: bold;\r\n      font-size: 18px;\r\n    }\r\n    &_text {\r\n      font-size: 14px;\r\n      //&:not(:last-child) {\r\n      //  margin-bottom: 20px;\r\n      //}\r\n    }\r\n   .btn {\r\n     margin-top: 30px;\r\n   }\r\n    &_image {\r\n      max-height: 170px;\r\n      img {\r\n        max-height: 100%;\r\n      }\r\n    }\r\n\r\n\r\n    &.-size {\r\n      &-sm {\r\n\r\n      }\r\n      &-md {\r\n\r\n      }\r\n      &-lg {\r\n        height: 360px;\r\n        .pzo_item-left {\r\n          padding: 70px 0 70px 40px;\r\n        }\r\n        .pzo_item_text {\r\n        }\r\n        .pzo_item_image {\r\n          img {\r\n            max-height: 360px;\r\n          }\r\n        }\r\n      }\r\n    }\r\n\r\n  }\r\n}\r\n\r\n"
+	],
+	"mappings": ";AGAA,AAAA,IAAI,CAAC;EAGH,UAAU,EAAE,IAAK;CAqElB;;AAnEC,MAAM,EAAL,SAAS,EAAE,KAAK;;EALnB,AAMkB,IANd,EAMA,AAAA,KAAC,EAAO,MAAM,AAAb,EAAe;IACd,OAAO,EAAE,OAAQ;GAClB;;EARL,AAAA,SAAI,CASO;IACL,aAAa,EAAE,CAAC,CAAA,UAAU;GAC3B;;;;AAXL,AAAA,SAAI,CAeK;EACL,OAAO,EAAE,IAAK;EACd,KAAK,EAhBM,OAAO;EAiBlB,MAAM,EAAE,KAAM;EACd,aAAa,EAAE,IAAK;CAoDrB;;;AAvEH,AAAA,cAAI,CAqBO;EACL,OAAO,EAAE,gBAAiB;CAC3B;;;AAvBL,AAAA,eAAI,CA2BQ;EACN,aAAa,EAAE,IAAK;EACpB,WAAW,EAAE,IAAK;EAClB,SAAS,EAAE,IAAK;CACjB;;;AA/BL,AAAA,cAAI,CAgCO;EACL,SAAS,EAAE,IAAK;CAIjB;;;AArCL,AAsCG,SAtCC,CAsCD,IAAI,CAAC;EACH,UAAU,EAAE,IAAK;CAClB;;;AAxCJ,AAAA,eAAI,CAyCQ;EACN,UAAU,EAAE,KAAM;CAInB;;;AA9CL,AA2CM,eA3CF,CA2CE,GAAG,CAAC;EACF,UAAU,EAAE,IAAK;CAClB;;;AA7CP,AAAA,SAAI,AAiDC,SAAM,CAOA;EACH,MAAM,EAAE,KAAM;CAWf;;;AApEP,AA0DQ,SA1DJ,AAiDC,SAAM,CASH,cAAc,CAAC;EACb,OAAO,EAAE,gBAAiB;CAC3B;;;AA5DT,AAgEU,SAhEN,AAiDC,SAAM,CAcH,eAAe,CACb,GAAG,CAAC;EACF,UAAU,EAAE,KAAM;CACnB",
+	"names": []
+}
