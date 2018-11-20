@@ -1,74 +1,209 @@
 .pzo { // promo-zones
   $font-color: #ffffff;
 
+  $large-box-lg-height: 360px;
+
   margin-top: 50px;
 
-  @media (max-width:960px) {
+  @media (max-width: 991px) {
     [class*="col-"] {
       padding: 0 0 0 0;
     }
-    &_item {
-      margin-bottom: 0!important;
+    .no-mobile-margin {
+      margin: 0 !important;
     }
   }
-
+  @media (max-width: 576px) {
+    .btn {
+      display: none;
+    }
+  }
 
   &_item {
     display: flex;
     color: $font-color;
-    height: 170px;
-    margin-bottom: 30px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
 
-    &-left {
-      padding: 30px 0 30px 20px;
+    &-main {
+
     }
     &-right {
 
     }
     &_title {
-      margin-bottom: 20px;
+      margin-bottom: 7px;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 14px;
+      line-height: 1.285;
     }
     &_text {
-      font-size: 14px;
+      font-size: 12px;
+      line-height: 1.33;
+      position: relative;
+      z-index: 20;
       //&:not(:last-child) {
       //  margin-bottom: 20px;
       //}
     }
-   .btn {
-     margin-top: 30px;
-   }
-    &_image {
-      max-height: 170px;
+    .btn {
+      margin-top: 30px;
+      border: 1px solid white;
+    }
+    &-image {
+      position: absolute;
+      z-index: 5;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
       img {
         max-height: 100%;
       }
     }
 
-
     &.-size {
-      &-sm {
-
+      &-lg {
+        height: 140px;
+        .pzo_item {
+          &-main {
+            padding: 20px 107px 20px 15px;
+          }
+          &-image img {
+            margin-right: -33px;
+            height: 140px;
+          }
+        }
       }
       &-md {
-
+        height: 120px;
+        .pzo_item {
+          &-main {
+            padding: 20px 15px 27px 15px;
+          }
+          &-image img {
+            margin-right: -60px;
+            height: 140px;
+          }
+        }
       }
-      &-lg {
-        height: 360px;
-        .pzo_item-left {
-          padding: 70px 0 70px 40px;
-        }
-        .pzo_item_text {
-        }
-        .pzo_item_image {
-          img {
-            max-height: 360px;
+      &-sm {
+        height: 120px;
+        .pzo_item {
+          &-main {
+            padding: 20px 15px 27px 15px;
+          }
+          &-image img {
+            margin-right: -60px;
+            height: 140px;
           }
         }
       }
     }
-
   }
-}
 
+  @media (min-width: 576px) {
+    &_item {
+      &.-size {
+        &-lg {
+          height: 240px;
+          .pzo_item {
+            &-main {
+              padding: 20px 182px 20px 17px;
+            }
+            &-image img {
+              height: 240px;
+            }
+          }
+        }
+        &-sm {
+          height: 120px;
+          .pzo_item {
+            &-main {
+              padding: 20px 15px ;
+            }
+            &-image img {
+              margin-right: -33px;
+            }
+          }
+        }
+        &-md {
+          height: 140px;
+          .pzo_item {
+            &-main {
+              padding: 20px 107px 20px 15px;
+            }
+            &-image img {
+              margin-right: -33px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    &_item {
+      margin-bottom: 22px;
+      &_title {
+        margin-bottom: 20px;
+      }
+      &_text {
+        font-size: 14px;
+        line-height: 1.428;
+      }
+
+      &.-size {
+        &-sm {
+          height: 170px;
+          .pzo_item {
+            &-main {
+              padding: 30px 109px 30px 20px;
+            }
+            &_title {
+              font-size: 18px;
+            }
+            &-image img {
+              margin-right: -5px;
+              height: 170px;
+
+            }
+          }
+        }
+        &-md {
+          height: 170px;
+          .pzo_item {
+            &-main {
+              padding: 30px 193px 30px 20px;
+            }
+            &_title {
+              font-size: 18px;
+            }
+            &-image img {
+              margin-right: 0;
+              height: 170px;
+
+            }
+          }
+        }
+        &-lg {
+          height: 360px;
+          .pzo_item {
+            &-main {
+              padding: 70px 245px 70px 50px;
+            }
+            &_title {
+              font-size: 24px;
+            }
+            &-image img {
+              margin-right: -90px;
+              height: 360px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
